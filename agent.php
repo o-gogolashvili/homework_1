@@ -10,7 +10,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 
 preg_match ('/<table class="league-table">+.+<\/table>/',$result, $matches);
-print $matches;
+print_r( $matches);
 
 ?>
  
