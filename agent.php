@@ -9,7 +9,7 @@ $result = curl_exec($ch);
 //print $result;
 curl_close($ch);
 
-preg_match ('/<table class="league-table">+.+<\/table>/',$result, $matches);
+preg_match ('/(<table class="league-table">.+?<\/table> ?)+/',$result, $matches);
 print $matches[0];
 
 ?>
